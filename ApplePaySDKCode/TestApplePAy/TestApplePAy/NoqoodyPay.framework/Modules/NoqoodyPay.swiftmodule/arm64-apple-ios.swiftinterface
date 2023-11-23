@@ -1,0 +1,162 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name NoqoodyPay
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CommonCrypto
+import Foundation
+@_exported import NoqoodyPay
+import PassKit
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public typealias Parameters = [Swift.String : Any]
+public protocol ParameterEncoder {
+  func encode(urlRequest: inout Foundation.URLRequest, with parameters: NoqoodyPay.Parameters) throws
+}
+public enum ParameterEncoding {
+  case urlEncoding
+  case jsonEncoding
+  case urlAndJsonEncoding
+  case formBodyUrlencoded
+  public func encode(urlRequest: inout Foundation.URLRequest, bodyParameters: NoqoodyPay.Parameters?, urlParameters: NoqoodyPay.Parameters?) throws
+  public static func == (a: NoqoodyPay.ParameterEncoding, b: NoqoodyPay.ParameterEncoding) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NetworkError : Swift.String, Swift.Error {
+  case parametersNil
+  case encodingFailed
+  case missingURL
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct URLParameterEncoder : NoqoodyPay.ParameterEncoder {
+  public func encode(urlRequest: inout Foundation.URLRequest, with parameters: NoqoodyPay.Parameters) throws
+}
+public enum TransactionStatus : Swift.String, Swift.Codable {
+  case error
+  case success
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PaymentStatusModel : Swift.Codable {
+  public let transactionID: Swift.String?, responseCode: Swift.String?
+  public let amount: Swift.Int?
+  public let transactionStatus: NoqoodyPay.TransactionStatus?
+  public let transactionDate: Swift.String?, reference: Swift.String?, serviceName: Swift.String?
+  public let mobile: Swift.String?, transactionMessage: Swift.String?, pun: Swift.String?, welcomeDescription: Swift.String?
+  public let invoiceNo: Swift.String?
+  public let dollarAmount: Swift.Int?
+  public let email: Swift.String?, payeeName: Swift.String?
+  public let success: Swift.Bool?
+  public let code: Swift.String?, message: Swift.String?
+  public let errors: [Swift.String]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum HTTPMethod : Swift.String {
+  case get
+  case post
+  case put
+  case patch
+  case delete
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct JSONParameterEncoder : NoqoodyPay.ParameterEncoder {
+  public func encode(urlRequest: inout Foundation.URLRequest, with parameters: NoqoodyPay.Parameters) throws
+}
+public struct FormBodyURLEncoding : NoqoodyPay.ParameterEncoder {
+  public func encode(urlRequest: inout Foundation.URLRequest, with parameters: NoqoodyPay.Parameters) throws
+}
+@_hasMissingDesignatedInitializers public class NooqodyPaymentSceneConfigurator {
+  public static func configure(config: NoqoodyPay.ConfigModel) -> NoqoodyPay.NooqodyPaymentViewController
+  @objc deinit
+}
+public protocol NooqodyPaymentDelegate : AnyObject {
+  func paymentSuccess(controller: NoqoodyPay.NooqodyPaymentViewController, paymentModel: NoqoodyPay.PaymentStatusModel)
+  func paymentFailed(controller: NoqoodyPay.NooqodyPaymentViewController, refrence: Swift.String, message: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NooqodyPaymentViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any NoqoodyPay.NooqodyPaymentDelegate)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension NoqoodyPay.NooqodyPaymentViewController : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreFoundation.CGSize
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+}
+extension NoqoodyPay.NooqodyPaymentViewController : PassKit.PKPaymentAuthorizationViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func paymentAuthorizationViewControllerDidFinish(_ controller: PassKit.PKPaymentAuthorizationViewController)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func paymentAuthorizationViewController(_ controller: PassKit.PKPaymentAuthorizationViewController, didAuthorizePayment payment: PassKit.PKPayment, handler completion: @escaping (PassKit.PKPaymentAuthorizationResult) -> Swift.Void)
+}
+public enum NooqodyEnviroment {
+  case NooqodyEnviromentSandBox
+  case NooqodyEnviromentProduction
+  public static func == (a: NoqoodyPay.NooqodyEnviroment, b: NoqoodyPay.NooqodyEnviroment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ConfigModel {
+  public init(environment: NoqoodyPay.NooqodyEnviroment, callBackURL: Swift.String, projectCode: Swift.String, clientSecret: Swift.String, token: Swift.String, amount: Swift.Double, customerEmail: Swift.String, customerMobile: Swift.String, customerName: Swift.String, description: Swift.String)
+}
+public enum ServerPaths : Swift.String {
+  case getToken
+  case getPaymentLinks
+  case getPaymentChannels
+  case checkPaymentStatus
+  case createApplePaySession
+  case proccesApplePayPayment
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public static func instance() -> Self
+}
+public typealias NetworkRouterCompletion = (_ data: Foundation.Data?, _ response: Foundation.URLResponse?, _ error: (any Swift.Error)?) -> ()
+public typealias NetworkRouterDownloadCompletion = (_ data: Foundation.URL?, _ response: Foundation.URLResponse?, _ error: (any Swift.Error)?) -> ()
+public typealias HTTPHeaders = [Swift.String : Swift.String]
+public enum HTTPTask {
+  case request
+  case requestParameters(bodyParameters: NoqoodyPay.Parameters?, bodyEncoding: NoqoodyPay.ParameterEncoding, urlParameters: NoqoodyPay.Parameters?)
+  case requestParametersAndHeaders(bodyParameters: NoqoodyPay.Parameters?, bodyEncoding: NoqoodyPay.ParameterEncoding, urlParameters: NoqoodyPay.Parameters?, additionHeaders: NoqoodyPay.HTTPHeaders?)
+}
+extension NoqoodyPay.ParameterEncoding : Swift.Equatable {}
+extension NoqoodyPay.ParameterEncoding : Swift.Hashable {}
+extension NoqoodyPay.NetworkError : Swift.Equatable {}
+extension NoqoodyPay.NetworkError : Swift.Hashable {}
+extension NoqoodyPay.NetworkError : Swift.RawRepresentable {}
+extension NoqoodyPay.TransactionStatus : Swift.Equatable {}
+extension NoqoodyPay.TransactionStatus : Swift.Hashable {}
+extension NoqoodyPay.TransactionStatus : Swift.RawRepresentable {}
+extension NoqoodyPay.HTTPMethod : Swift.Equatable {}
+extension NoqoodyPay.HTTPMethod : Swift.Hashable {}
+extension NoqoodyPay.HTTPMethod : Swift.RawRepresentable {}
+extension NoqoodyPay.NooqodyEnviroment : Swift.Equatable {}
+extension NoqoodyPay.NooqodyEnviroment : Swift.Hashable {}
+extension NoqoodyPay.ServerPaths : Swift.Equatable {}
+extension NoqoodyPay.ServerPaths : Swift.Hashable {}
+extension NoqoodyPay.ServerPaths : Swift.RawRepresentable {}

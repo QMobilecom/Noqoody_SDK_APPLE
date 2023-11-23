@@ -1,0 +1,11 @@
+framework module NoqoodyPay {
+  umbrella header "NoqoodyPay.h"
+  export *
+
+  module * { export * }
+}
+
+module NoqoodyPay.Swift {
+  header "NoqoodyPay-Swift.h"
+  requires objc
+}

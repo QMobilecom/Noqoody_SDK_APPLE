@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3152C530-916A-49B1-A9A3-5460E884B86D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "958FCB80-5802-4AF4-8F8A-E9E01C3D4B7E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestApplePAy/SDK/Modules/PaymentList/NooqodyPaymentSceneInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "getPaymentLinks()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "958FCB80-5802-4AF4-8F8A-E9E01C3D4B7E - 75c14ebe68ee9d5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TestApplePAy.PaymentLinksModel) -&gt; () in TestApplePAy.NooqodyPaymentSceneInteractor.getPaymentLinks() -&gt; ()"
+                  moduleName = "TestApplePAy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoudali/Desktop/TestApplePAy/TestApplePAy/SDK/Modules/PaymentList/NooqodyPaymentSceneInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "1502">
+               </Location>
+               <Location
+                  uuid = "958FCB80-5802-4AF4-8F8A-E9E01C3D4B7E - 75c14ebe68ee9d5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TestApplePAy.PaymentLinksModel) -&gt; () in TestApplePAy.NooqodyPaymentSceneInteractor.getPaymentLinks() -&gt; ()"
+                  moduleName = "TestApplePAy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoudali/Desktop/TestApplePAy/TestApplePAy/SDK/Modules/PaymentList/NooqodyPaymentSceneInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "982">
+               </Location>
+               <Location
+                  uuid = "958FCB80-5802-4AF4-8F8A-E9E01C3D4B7E - 75c14ebe68ee9d5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TestApplePAy.PaymentLinksModel) -&gt; () in TestApplePAy.NooqodyPaymentSceneInteractor.getPaymentLinks() -&gt; ()"
+                  moduleName = "TestApplePAy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoudali/Desktop/TestApplePAy/TestApplePAy/SDK/Modules/PaymentList/NooqodyPaymentSceneInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "652">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3E77C18-FB6A-4765-BD0C-E33A88ACC419"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestApplePAy/SDK/Modules/PaymentList/NooqodyPaymentSceneInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "getPaymentLinks()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C3E77C18-FB6A-4765-BD0C-E33A88ACC419 - 8b82fcc2aaa83c67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TestApplePAy.NooqodyPaymentSceneInteractor.getPaymentLinks() -&gt; ()"
+                  moduleName = "TestApplePAy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoudali/Desktop/TestApplePAy/TestApplePAy/SDK/Modules/PaymentList/NooqodyPaymentSceneInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "3490">
+               </Location>
+               <Location
+                  uuid = "C3E77C18-FB6A-4765-BD0C-E33A88ACC419 - c365b044025e5947"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Error) -&gt; () in TestApplePAy.NooqodyPaymentSceneInteractor.getPaymentLinks() -&gt; ()"
+                  moduleName = "TestApplePAy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoudali/Desktop/TestApplePAy/TestApplePAy/SDK/Modules/PaymentList/NooqodyPaymentSceneInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "C3E77C18-FB6A-4765-BD0C-E33A88ACC419 - c365b044025e5947"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Error) -&gt; () in TestApplePAy.NooqodyPaymentSceneInteractor.getPaymentLinks() -&gt; ()"
+                  moduleName = "TestApplePAy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoudali/Desktop/TestApplePAy/TestApplePAy/SDK/Modules/PaymentList/NooqodyPaymentSceneInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E7F74748-41E8-4FA2-BDB6-A9DBC27C9ABA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestApplePAy/SDK/Modules/PaymentList/Views/NooqodyPaymentViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
+            landmarkName = "paymentAuthorizationViewController(_:didAuthorizePayment:handler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46A10527-9090-4A27-98D3-3643F68B17E7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestApplePAy/SDK/Modules/PaymentList/Views/NooqodyPaymentViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
+            landmarkName = "paymentAuthorizationViewController(_:didAuthorizePayment:handler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
